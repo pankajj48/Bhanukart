@@ -8,6 +8,7 @@ Product Sections: Highlighting featured and new arrivals with detailed descripti
 Footer Section: Includes contact information, links to important pages, and social media icons.
 Newsletter Signup: Allows users to subscribe for updates on the latest deals and offers.
 App Installation Links: Provides options to download the store’s app from the App Store and Google Play.
+
 Technologies Used
 HTML: Structure and content of the website.
 CSS: Styling and layout adjustments.
