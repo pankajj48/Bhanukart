@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bhanukart</title>
+    <script src="https://kit.fontawesome.com/1f51851928.js" ></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'  rel='stylesheet'>
+    <link rel="stylesheet" href="project1pratinik.css">
+  </head>
+  <style>
+.search_section {
+    background: #fff;
+    padding: 40px 0;
+}
+
+.search_section .title h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.input-group .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.input-group .btn:hover {
+    background-color: #0056b3;
+}
+
+small {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #888;
+}
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table td,
+.table th {
+    padding: 16px;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+
+.number {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.image img {
+    border-radius: 8px;
+}
+
+.product {
+    font-size: 16px;
+}
+
+.product strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.rate {
+    color: #ffbf00;
+}
+
+.rate i {
+    margin-right: 2px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+  </style>
+  <body>
+    <section id="header">
+        <a href="#"><img src="Assest/Bhanukart-removebg-preview (1).png" alt="logo"></a>
+        <div>
+          <ul id="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="category.html">CATEGORY</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="CONTACT.html">CONTACT</a></li>
+            <li id="lg-bag"><a href="search.html" class="search-icon active"><i class="bx bxs-search"></i> search</a></li>
+            <li><a href="cart.html" class="search-icon"><i class="bx bxs-cart"></i>cart</a></li>
+            <a href="#" id="close"><i class="bx bx-x"></i></a>
+        </ul>
+        </div>
+        <div id="mobile">
+            <a href="search.html" class="search-icon active" style="border: none;"><i class="bx bxs-search"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section class="search_section py-5 my-5" id="search_section">
+        <div class="container">
+          <div class="title text-center mb-5">
+            <h2><i class="far fa-file mr-2"></i>Search</h2>
+          </div>
+          <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="input-group">
+                    <input type="text" class="form-control" value="xyz">
+                    <span class="input-group-btn">
+                      <button class="btn btn-primary" type="button"><i class="bx bxs-search"></i></button>
+                    </span>
+                </div>
+                <small>Showing all results matching "t-shirt"</small>
+                <div class="table-responsive mt-3">
+                    <table class="table table-hover">
+                        <tbody class="border-bottom">
+                            <tr>
+                                <td class="number text-center">1</td>
+                                <td class="image"><img src="Assest/product5.jpeg" width="100px" class="img img-fluid" alt=""></td>
+                                <td class="product"><strong>Product 1</strong><br>This is the product description. </td>
+                                <td class="rate text-right">
+                                    <span>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o"></i>
+                                    </span>
+                                </td>
+                                <td class="price text-right">₹110</td>
+                            </tr>
+                            <tr>
+                                <td class="number text-center">2</td>
+                                <td class="image"><img src="Assest/product3.jpeg" width="100px" class="img img-fluid" alt=""></td>
+                                <td class="product"><strong>Product 2</strong><br>This is the product description.</td>
+                                <td class="rate text-right">
+                                    <span>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o"></i>
+                                    </span>
+                                </td>
+                                <td class="price text-right">₹130</td>
+                            </tr>
+                            <tr>
+                                <td class="number text-center">3</td>
+                                <td class="image"><img src="Assest/product2.jpeg" width="100px" class="img img-fluid" alt=""></td>
+                                <td class="product"><strong>Product 3</strong><br>This is the product description. </td>
+                                <td class="rate text-right">
+                                    <span>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o"></i>
+                                    </span>
+                                </td>
+                                <td class="price text-right">₹100</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+          <h4>Sign Up For Newsletter</h4>
+          <p>Get E-mail updates about our latest shop and <span>special offers.</span> </p>
+      </div>
+      <div class="form">
+          <input type="text" placeholder="Your email address">
+          <button class="normal">Sign Up</button>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="Assest/Bhanukart-removebg-preview (1).png" alt="logo">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 123, xyz, xyz, xyz</p>
+            <p><strong>Phone:</strong> +91 000000000</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <h4>About Us</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+    
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="Assest/app.jpg" alt="App Store">
+                <img src="Assest/play.jpg" alt="Google Play">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="Assest/pay.png" alt="Payment Methods">
+        </div>
+        <div class="backtop">
+            <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button">
+            <i class="fas fa-chevron-up text-dark"></i>
+            </a>
+        </div>
+    </footer>
+    
+    <script src="style.js"></script>
+  </body>
+</html>
