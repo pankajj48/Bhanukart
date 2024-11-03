@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bhanukart</title>
+  <script src="https://kit.fontawesome.com/1f51851928.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="project1pratinik.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+
+    h1 {
+      font-size: 40px;
+      line-height: 75px;
+      color: #222;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px 10px;
+      background: #f5f5f5;
+    }
+
+    .card {
+      background: linear-gradient(to bottom right, #d1e9fe, #fce6fe);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 0 10px;
+      width: 100%;
+    }
+
+    .card h5 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    .form-group label {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+      transition: border-color 0.3s;
+    }
+
+    .form-control:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    .custom-select {
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      width: 100%;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    .list-group {
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    .list-group-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      margin-bottom: -1px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+    }
+
+    .list-group-item:last-child {
+      border-bottom-right-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    #checkout-form{
+      width: 100%; 
+      padding: 0 10px;
+    }
+  </style>
+</head>
+<body>
+ 
+  
+  <section id="header">
+    <a href="#"><img src="Assest/Bhanukart-removebg-preview (1).png" alt="logo"></a>
+    <div>
+      <ul id="navbar">
+        <li><a  href="index.html">HOME</a></li>
+        
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a  href="category.html">Category</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="CONTACT.html">CONTACT</a></li>
+        <li id="lg-bag"><a href="search.html" class="search-icon"><i class="bx bxs-search"></i> search</a></li>
+        <li><a class="active" href="cart.html" class="search-icon"><i class="bx bxs-cart"></i>cart</a></li>
+        
+        <a href="#" id="close"><i class="bx bx-x"></i></a>
+    </ul>
+    </div>
+    <div id="mobile">
+       <a href="search.html" class="search-icon" style="border: none;"><i class="bx bxs-search"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>
+  </section>
+
+  <h1>Checkout</h1>
+  <div class="container">
+    <form id="checkout-form" action="orderconfirmation.html" >
+      <div class="card">
+        <h5>Billing details</h5>
+        <div class="form-group">
+          <label for="firstName">First name</label>
+          <input type="text" id="firstName" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last name</label>
+          <input type="text" id="lastName" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="form18">Phone</label>
+          <input type="number" id="form18" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="form19">Email address</label>
+          <input type="email" id="form19" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label>Country</label>
+          <select class="custom-select" required>
+            <option value="" selected>Choose your option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="form14">Address Line 1</label>
+          <input type="text" id="form14" placeholder="House number and street name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="form15">Address Line 2</label>
+          <input type="text" id="form15" placeholder="Apartment, suite, unit etc. (optional)" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="form16">Postcode / ZIP</label>
+          <input type="text" id="form16" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="form17">Town / City</label>
+          <input type="text" id="form17" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="form76">Additional information</label>
+          <textarea id="form76" class="form-control" rows="4"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">
+            <i class="fa fa-check mr-2"></i>Purchase
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <div class="card">
+      <h5>Order summary</h5>
+      <ul class="list-group list-group-flush" id="order-summary">
+        <!-- Order items will be dynamically inserted here -->
+      </ul>
+    </div>
+  </div>
+
+  <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+      <h4>Sign Up For Newsletter</h4>
+      <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Your email address">
+      <button class="normal">Sign Up</button>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="Assest/Bhanukart-removebg-preview (1).png" alt="logo">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> 123, xyz, xyz, xyz</p>
+        <p><strong>Phone:</strong> +91 000000000</p>
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>About Us</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact us</a>
+    </div>
+
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign in</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+    
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="Assest/app.jpg" alt="App Store">
+            <img src="Assest/play.jpg" alt="Google Play">
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="Assest/pay.png" alt="Payment Methods">
+    </div>
+    <div class="backtop">
+        <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button">
+        <i class="fas fa-chevron-up text-dark"></i>
+        </a>
+        </div>
+</footer>
+ <script src="style.js"></script>
+</body>
+</html>
